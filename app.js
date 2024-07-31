@@ -10,8 +10,8 @@ app.use("/api/user",router)
 app.use("/api/blog",blogRouter)
 
 
-
-mongoose.connect("mongodb+srv://ayhan219:ayhan551@cluster0.6u51lkq.mongodb.net/Blog?retryWrites=true&w=majority&appName=Cluster0")
+//connect with mongo URI
+mongoose.connect("")
 .then(()=> app.listen(5000))
 .then(()=>console.log("Connected to DB and listening the port 5000"))
 .catch((err)=>{
